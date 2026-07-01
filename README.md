@@ -9,19 +9,23 @@ Browser UI for loading a music file and inspecting:
 
 ## Requirements
 
-- Node.js and npm
+- Node.js 20 or newer
+- npm, which is included with Node.js
 
-## Setup
+## Run Locally
 
-Clone the repository and install dependencies:
+Open a terminal, then clone the repository:
 
 ```sh
 git clone https://github.com/amir-sardarzadeh/music-visualizer-ui.git
 cd music-visualizer-ui
-npm install
 ```
 
-## Development
+Install the project dependencies:
+
+```sh
+npm install
+```
 
 Start the local development server:
 
@@ -29,7 +33,33 @@ Start the local development server:
 npm run dev
 ```
 
-Vite will print a local URL, usually `http://localhost:5173/`. Open that URL in a browser while the dev server is running.
+After the server starts, Vite prints a local address like:
+
+```text
+http://localhost:5173/
+```
+
+Open that address in a browser. Keep the terminal window running while using the app. Press `Ctrl+C` in the terminal to stop the server.
+
+On Windows PowerShell, if `npm run dev` is blocked by script execution policy, use:
+
+```powershell
+npm.cmd run dev
+```
+
+## Production Build
+
+Create a production build:
+
+```sh
+npm run build
+```
+
+Preview the production build locally:
+
+```sh
+npm run preview
+```
 
 ## Controls
 
