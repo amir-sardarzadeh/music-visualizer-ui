@@ -7,33 +7,29 @@ Browser UI for loading a music file and inspecting:
 - piano-roll note energy grid from A0 to C8
 - tuner-style current note detection
 
-## Start After Restart
+## Requirements
 
-After restarting the computer, open PowerShell and run:
+- Node.js and npm
 
-```powershell
-cd "C:\Users\Amirs\Downloads\Music\Parkhideh\music-visualizer-ui"
-npm.cmd run dev -- --host 127.0.0.1 --port 5173
+## Setup
+
+Clone the repository and install dependencies:
+
+```sh
+git clone https://github.com/amir-sardarzadeh/music-visualizer-ui.git
+cd music-visualizer-ui
+npm install
 ```
 
-Then open:
+## Development
 
-```text
-http://127.0.0.1:5173/
+Start the local development server:
+
+```sh
+npm run dev
 ```
 
-The URL works only while the dev server command is running.
-
-## First-Time Setup
-
-Dependencies are already installed in this folder. If `node_modules` is deleted or the app is moved to another computer, run:
-
-```powershell
-cd "C:\Users\Amirs\Downloads\Music\Parkhideh\music-visualizer-ui"
-npm.cmd install
-```
-
-Then start the app with the command in `Start After Restart`.
+Vite will print a local URL, usually `http://localhost:5173/`. Open that URL in a browser while the dev server is running.
 
 ## Controls
 
@@ -48,11 +44,9 @@ Then start the app with the command in `Start After Restart`.
 
 ## Checks
 
-To verify the app:
+To verify the app locally:
 
-```powershell
-npm.cmd run lint
-npm.cmd run build
+```sh
+npm run lint
+npm run build
 ```
-
-Use `npm.cmd`, not `npm`, if PowerShell blocks `npm.ps1`.
